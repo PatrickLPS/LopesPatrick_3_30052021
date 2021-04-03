@@ -6,8 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
-    <link rel="stylesheet" media='screen and (min-width: 600px) and (max-width: 1500px)' href="style.css" />
-    <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 600px)' href="mobile.css"/>
+    <link rel="stylesheet" media='screen and (min-width:870px) and (max-width:5000px)' href="style.css" />
+    <link rel="stylesheet" media='screen and (min-width:680px) and (max-width:870px)' href="tablette.css" />
+    <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width:680px)' href="mobile.css"/>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/6edb39c88a.js" crossorigin="anonymous"></script>
@@ -20,24 +21,24 @@
 </header>
 
 <main>
-    <section class="Localiter">
+    <div class="Localiter">
 <div class="local">
     <h2 class=local_h2_title><i class="fa fa-map-marker local_icon" aria-hidden="true"></i> Paris, Belleville</h2>
 </div>
-    </section>
+   
     <section class="reserver">
         <h2 class="reserv_title">Reserver le menu qui vous convient</h2>
-        <p class="reserv_text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+        <p class="reserv_text">Découvrez des restaurants d'exception,séléctionnés par nos soins</p>
         <a class="reserv_button">Explorer nos restaurants</a>
-    </section>
+    </section> </div>
 
     <section class="fonctionnement">
         <div class="box">
             <h2 class="fonction_title">Fonctionnement</h2>
             <ol class="fonction_steps">
- <li class="choice_"><i class="fa fa-mobile head_icon" aria-hidden="true"></i>Choisissez un restaurant</li>
-  <li class="compo_"><i class="fa fa-list head_icon" aria-hidden="true"> </i>Composez votre menu</li>
-  <li class="local_"><i class="fas fa-store-alt head_icon" aria-hidden="true"> </i>Dégustez au restaurant</li>
+ <li class="choice_"><i class="fa fa-mobile head_icon" aria-hidden="true"></i><span>Choisissez un restaurant</span></li>
+  <li class="compo_"><i class="fa fa-list head_icon" aria-hidden="true"></i><span>Composez votre menu</span></li>
+  <li class="local_"><i class="fas fa-store head_icon" aria-hidden="true"></i><span>Dégustez au restaurant</span></li>
             </ol>
         </div>
     </section>
@@ -47,46 +48,52 @@
             <h2 class="restau_title">Restaurants</h2>
 
             <div class="box1"><figure><figcaption>
-                <a href="menu_LaPalette.html"><img src="images/restaurants/jay-wennington.jpg"
+                <a href="menu_LaPalette.html"><span class="miniSideA">Nouveau</span><img src="images/restaurants/jay-wennington.jpg"
                     alt="photo menu" class="menu1" />
                     <div class="section_menu1">
                         <article class="section_menu1">
+                            <span class="favorite"><i class="far fa-heart" aria-hidden="true"></i></span>
                             <div class="textGroup">
-                            <h2 class="menu_title">La note enchantée</h2>
+                            <h2 class="menu_title">La palette du goût</h2>
                             <p class="menubox1">Ménilmontant</p></div>
                         </article>
                     </div>
                 </a></figcaption></figure>
             </div>
             <div class="box2"><figure><figcaption>
-                <a href="menu_LaNote.html"><img src="images/restaurants/stil.jpg"
+                <a href="menu_LaNote.html"><span class="miniSideB">Nouveau</span><img src="images/restaurants/stil.jpg"
                     alt="photo menu" class="menu2" />
                     <article class="section_menu2">
+                    <span class="favorite"><i class="far fa-heart" aria-hidden="true"></i></span>
                         <div class="textGroup">
-                        <h2 class="menu_title2">Le chic à la française</h2>
+                        <h2 class="menu_title2">La note enchantée</h2>
                         <p class="menubox2">Charonne</p></div>
                     </article>
-                   
+                 
                 </a> </figcaption></figure>
             </div>
             <div class="box3"><figure> <figcaption>
                 <a href="menu_LaFrancaise.html"><img src="images/restaurants/louis-hansel.jpg"
                     alt="photo menu" class="menu3" />
                     <article class="section_menu3">
+                    <span class="favorite"><i class="far fa-heart" aria-hidden="true"></i></span>
                         <div class="textGroup">
-                        <h2 class="menu_title3">Le délice des papilles</h2>
+                        <h2 class="menu_title3">Le chic à la française</h2>
                         <p class="menubox3">Cité Rouge</p></div>
                     </article>
+                    
                 </a></figcaption></figure>
             </div>
             <div class="box4"><figure><figcaption>
                 <a href="menu_LeDelice.html"><img src="images/restaurants/toa-heftiba.jpg"
                     alt="photo menu" class="menu4" />
                     <article class="section_menu4">
+                    <span class="favorite"><i class="far fa-heart" aria-hidden="true"></i></span>
                         <div class="textGroup">
-                        <h2 class="menu_title4">La palette du goût</h2>
+                        <h2 class="menu_title4">Le délice des sens</h2>
                         <p class="menubox4">Folie-Méricourt</p></div>
                         </article>
+                        
                 </a> </figcaption></figure>
             </div>
         </section>
