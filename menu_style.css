@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  font-family:"Roboto";
+  margin: 0;
+
+}
+ img{height:500px;width:100%;object-fit: cover;position:relative;}
+ .entrees{display: flex;}
+ .LesPlats{background-color: brown;}
+ .prix{display: flex;justify-content:flex-end;}
+ .validation{background-color: cadetblue;padding:2px;width:100px;}
+ .bg{width:60px;height:42px;}
+ .fa-check{border-radius:50px;font-size:12px;background-color: burlywood;}
+ .text{}
+ .tout_les_plats{background-color:#f6f6f6;}
+ 
