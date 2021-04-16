@@ -64,8 +64,16 @@ ol {
 span {
   font-size:16px;
 }
-.favorite{position: absolute;right:5em;}
-.fa-heart{font-size:35px;}
+.favorite{position: absolute;right:3em;font-size:35px;}
+.favorite-full{position: absolute;right:3em;font-size:35px;opacity:0;}
+.favorite-full:hover{
+    background: -webkit-linear-gradient(
+175deg
+, #FF79DA 10%, #9356DC 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;opacity: 1;transition:2s}
+
+
 .fonction_steps,li.local_,li.compo_,li.choice_ {
   position: relative;display: flex;
 }
@@ -93,6 +101,7 @@ h1 {
   margin: 15px;
 }
 .reserv_button {
+  border: #9356dc;
   background-color: gray;
   border-radius: 30px 30px 30px 30px;
   background: linear-gradient(0deg,#9356dc,#ff79da);
