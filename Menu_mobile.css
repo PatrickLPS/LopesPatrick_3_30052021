@@ -35,26 +35,19 @@ header{display:flex;justify-content:center;position:relative;}
   margin-right: 10px;
   border-radius: 15px;
  position: relative;
-  height:60px;
+ 
   justify-content: space-between;
   animation-name:apparition ;
   animation-duration:5s;
 animation-fill-mode: forwards;
 
 }
-.lesPlats h3,p{margin:0px;overflow:hidden;width:200px;
-white-space: nowrap;text-overflow: ellipsis;}
-.text{margin-top:10px;}
-
-.LesPlats:hover h3, p
-{overflow:hidden;
+ .text{margin-top:10px;margin-bottom:10px;p}
+h3,P{overflow:hidden;
   text-overflow:ellipsis;
 white-space:nowrap;
 margin-left:10px;
-width:220px;
-
-}
-
+width:240px;}
 
 .button_command{display: inline-flex;justify-content:center;margin-bottom:60px;margin-top:50px;}
 .button_end
@@ -88,13 +81,10 @@ img {
 }
 
  h1 {
-    display: block;
-    font-size: 1em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight:500;
+  margin-left: 20px;
+  margin-top:100px;
+  margin-bottom:40px;
+  font-size:32px;
 }
  .menu_titre {
     background-color: #F6F6F6;
@@ -151,7 +141,7 @@ display: flex;height:100%;align-items:center;width:0px;justify-content:center;bo
 
 
 footer {
-  background-color:red;
+  background-color: #353535;
   display: flex;
   padding: 20px;
 }
