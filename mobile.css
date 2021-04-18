@@ -58,7 +58,6 @@ span {
   font-size:18px;
   position:absolute;
 }
-
 .miniSideA,
 .miniSideB {
   background-color: #99e2d0;
@@ -111,14 +110,13 @@ h1 {
   cursor: pointer;
   padding-right: 30px;
   padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom:20px;
+  padding-top: 12px;
+  padding-bottom:12px;
   color: #fff;
   font-size: 18px;
-transition:1s;
-box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 50%);
 }
-.reserv_button:hover{transform: scale(1.1); box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 80%); background: linear-gradient(0deg,#b896e2,#f37dd2);}
+.reserv_button:hover{transform: scale(1.1); box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 80%); background: linear-gradient(0deg,#b896e2,#eb73c9);}
+
 p.reserv_text {
   display: block;
   margin-top: 0;
@@ -126,14 +124,8 @@ p.reserv_text {
   margin-left:15%;
   margin-right:15%;
 }
-.favorite{position: absolute;right:1.50em;font-size:35px;}
-.favorite-full{position: absolute;right:1.50em;font-size:35px;opacity:0;}
-.favorite-full:hover{
-    background: -webkit-linear-gradient(
-175deg
-, #FF79DA 10%, #9356DC 95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;opacity: 1;transition:2s}
+.favorite{position: absolute;right:3em;}
+.fa-heart{font-size:30px;}
 
 .head_icon {
   margin-right: 10px;
