@@ -3,14 +3,44 @@
 
 body {
   font-family: "Roboto";
-  margin: 0;
-}
+  margin: 0;}
+ 
 .local {
   background-color: #f3f3f3;
   padding: 5px;
   text-align: center;
   font-size: 13px;
 }
+
+ .loaderbox {font-size:42px;font-family:"Shrikhand";display: flex;background-color: hsla(0,0%,100%,.9); 
+  justify-content: center;background: linear-gradient(0deg,#9356dc,#ff79da);color:#d3d3d3;
+  align-items: center;z-index:9999;
+  animation: loadtime linear 3s;visibility: hidden;
+      position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;}
+
+@keyframes loadtime {
+
+  0% {opacity:1;visibility:visible;}
+
+  100%{opacity: 0;visibility: visible;}
+
+  }
+  
+h4{color:white;animation: flash 1.2s linear infinite; }
+@keyframes flash {
+
+  0% {color:#fff900;
+  text-shadow: 0 0 7px fff900;}
+
+  90%{color: white;text-shadow:none;}
+  100%{color:#fff900;
+  text-shadow: 0 0 7px fff900;}
+  }
+
 h2.local_h2_title{padding:6px;margin:0px;}
 .Localiter{margin:0px;}
 .local_icon {
@@ -68,7 +98,7 @@ span {
 .favorite-full{position: absolute;right:3em;font-size:35px;opacity:0;}
 .favorite-full:hover{
     background: -webkit-linear-gradient(
-175deg
+0deg
 , #FF79DA 10%, #9356DC 95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;opacity: 1;transition:2s}
@@ -112,8 +142,10 @@ h1 {
   padding-bottom:12px;
   color: #fff;
   font-size: 18px;
+  transition:2s;
 }
-.reserv_button:hover{transform: scale(1.1); box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 80%); background: linear-gradient(0deg,#b896e2,#eb73c9);}
+.reserv_button:hover{transform: scale(1.1); 
+box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 80%); background: linear-gradient(0deg,#b896e2,#eb73c9);}
 
 .fa-list,
 .fa-mobile,

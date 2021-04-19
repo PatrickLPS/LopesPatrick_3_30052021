@@ -18,6 +18,7 @@ img {
   margin: 15px;
 }
 
+
 header{display:flex;justify-content:center;position:relative;}
 .header_box{display:flex;position:absolute;left:50px;bottom:25px;}
 .fa-arrow-left{font-weight: bold;font-size:26px;color:black;}
@@ -34,17 +35,19 @@ header{display:flex;justify-content:center;position:relative;}
   margin-right: 10px;
   border-radius: 15px;
  position: relative;
-  height:60px;
+ height:60px;
   justify-content: space-between;
   animation-name:apparition ;
   animation-duration:5s;
 animation-fill-mode: forwards;
-display:flex;
+display: flex;
+align-items: flex-end;
 }
-h3,p{margin:0px;}
-.text{margin-top:10px;}
-
-
+.text{margin-bottom:10px;}
+h3{margin: 0px;}
+p{margin:0px;}
+h3,P{
+margin-left:10px;}
 
 .button_command{display: inline-flex;justify-content:center;margin-bottom:60px;margin-top:50px;}
 .button_end
@@ -60,12 +63,11 @@ h3,p{margin:0px;}
   padding-bottom:20px;
   color: #fff;
   font-size: 18px;
- 
+ transition: 2s;
 }
-h3,
-p {
-  margin-left: 10px
-}
+.button_end:hover{transform: scale(1.1); 
+box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 80%); background: linear-gradient(0deg,#b896e2,#eb73c9);}
+
 .tout_les_plats {
   background-color: #f6f6f6;
 }
@@ -76,31 +78,28 @@ img {
   object-fit: cover;
   position: relative;
 }
-img h1 {
-  display: flex;
-}
-h1 {
+
+ h1 {
   margin-left: 20px;
   margin-top:100px;
   margin-bottom:40px;
+  font-size:32px;
 }
-.menu_titre {
- 
-  background-color:#F6F6F6;
-  width: 100%;
-   font-family:"Shrikhand";
-   display: flex;
-border-radius: 42px 42px 0px 0px;
-transform: translateY(-40px);
-height:40px;
-   align-items: center;
-  
-}
+ .menu_titre {
+    background-color: #F6F6F6;
+    width: 100%;
+    font-family: "Shrikhand";
+    display: flex;
+    border-radius: 42px 42px 0px 0px;
+    transform: translateY(-40px);
+    height:40px;
+    align-items: center;
+    }
 
 .favorite{position: absolute;right:1em;font-size:35px;top:30px;}
 .favorite-full{position: absolute;right:1em;font-size:35px;opacity:0;top:30px;}
 .favorite-full:hover{
-    background: -webkit-linear-gradient(
+    background: linear-gradient(
 175deg
 , #FF79DA 10%, #9356DC 95%);
     -webkit-background-clip: text;
@@ -135,7 +134,7 @@ h2 {
 .bg{background-color: #99e2d0;
 display: flex;height:100%;align-items:center;width:0px;justify-content:center;border-radius:0px 15px 15px 0px;transition:2s;}
 
-.fa-check{padding:6px;background-color: white;border-radius:50%;color:turquoise;overflow:hidden;transition:1s;visibility: hidden;}
+.fa-check{padding:6px;background-color: white;border-radius:50%;color:#99E2D0;overflow:hidden;transition:1s;visibility: hidden;}
 .LesPlats:hover .bg {width:60px;}
 .LesPlats:hover .fa-check{transition: 2s;display:flex;transform: rotate(1turn);visibility:visible;}
 
@@ -149,6 +148,7 @@ footer {
   font-weight: 700;
   margin-right: 20px;
   margin-top:30px;
+  margin-bottom:10px;
 
 }
 h3.footer_title {
@@ -177,6 +177,3 @@ h3.footer_title {
 :link {
   text-decoration: none;
 }
-
-
- 
