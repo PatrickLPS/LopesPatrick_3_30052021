@@ -170,6 +170,7 @@ span {
 }
 
 /* autres elements */
+
 p {
   display: block;
   margin-top: 0;
@@ -186,14 +187,16 @@ p {
    padding-bottom:60px;
 }
 .bodybox {
-  display: flex;
+
   margin-top:50px;
+  
 }
 figcaption article {
   height: 100px;
   background-color: #fff;
   box-shadow: 2px 2px 2px 2px #d3d3d3;
 }
+
 figcaption img {
   height: 400px;
   width: 100%;
@@ -203,9 +206,10 @@ figcaption img {
 
 figure article,
 img {
-  display: flex;
+display:flex;
   flex-direction: column;
   justify-content: space-evenly;
+
 }
 article {
   color: #000;
