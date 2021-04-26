@@ -17,6 +17,7 @@ img {
   font-family:"Shrikhand";
   text-align: center;
   margin: 15px;
+
 }
  
 
@@ -55,8 +56,8 @@ header{display:flex;justify-content:center;position:relative;}
 
 
 /* favoris */
-.favorite{position: absolute;right:1em;font-size:35px;top:30px;}
-.favorite-full{position: absolute;right:1em;font-size:35px;opacity:0;top:30px;}
+.favorite{position: absolute;right:0.50em;font-size:35px;top:30px;}
+.favorite-full{position: absolute;right:0.50em;font-size:35px;opacity:0;top:30px;}
 .favorite-full:hover{
     background: linear-gradient(
 175deg
@@ -144,7 +145,7 @@ img {
   margin-left: 20px;
   margin-top:100px;
   margin-bottom:40px;
-  font-size:28px;
+  font-size:26px;
 }
  .menu_titre {
     background-color: #F6F6F6;
