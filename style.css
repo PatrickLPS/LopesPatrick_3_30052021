@@ -5,14 +5,7 @@ body {
   font-family: "Roboto";
   margin: 0;}
  
-.local {
-  background-color: #f3f3f3;
-  padding: 5px;
-  text-align: center;
-  font-size: 13px;
-}
-
-
+ /* Loader et animation loading */
  .loaderbox {font-size:42px;font-family:"Shrikhand";display: flex;background-color: hsla(0,0%,100%,.9); 
   justify-content: center;background: linear-gradient(0deg,#9356dc,#ff79da);color:#d3d3d3;
   align-items: center;z-index:9999;
@@ -22,15 +15,15 @@ body {
     width: 100%;
     left: 0;
     top: 0;}
-
-@keyframes loadtime {
+    
+    @keyframes loadtime {
 
   0% {opacity:1;visibility:visible;}
 
-  100%{opacity: 0;visibility: visible;}
+  100%{opacity:1;visibility: visible;}
 
   }
-  
+
 h4{color:white;animation: flash 1.2s linear infinite; }
 @keyframes flash {
 
@@ -41,12 +34,33 @@ h4{color:white;animation: flash 1.2s linear infinite; }
   100%{color:#fff900;
   text-shadow: 0 0 7px fff900;}
   }
+  /* Header title */
+h1 {
+  font-family:"Shrikhand";
+  text-align: center;
+ padding-top:10px;
+  padding-bottom:10px;
+ margin:0px;
+ box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    position: relative;
+    z-index: 1000;
+}
+
+/* Localiter */
+.local {
+  background-color: #f3f3f3;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+}
 
 h2.local_h2_title{padding:6px;margin:0px;}
 .Localiter{margin:0px;}
 .local_icon {
   margin: 10px;
 }
+
+/* Reserver et bouton associé */
 .reserver {
   background-color: #fafafa;
   padding: 2%;
@@ -54,6 +68,25 @@ h2.local_h2_title{padding:6px;margin:0px;}
   padding-bottom:6%;
 
 }
+.reserv_button {
+  border: #9356dc;
+  background-color: gray;
+  border-radius: 30px 30px 30px 30px;
+  background: linear-gradient(0deg,#9356dc,#ff79da);
+  cursor: pointer;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom:12px;
+  color: #fff;
+  font-size: 18px;
+  transition:2s;
+}
+.reserv_button:hover{transform: scale(1.1); 
+box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 80%); background: linear-gradient(0deg,#b896e2,#eb73c9);}
+
+/* Les puces */
+
 li::before {
   content: counter(li);
   color: #fff;
@@ -79,6 +112,14 @@ ol {
   margin-inline-end:0%;
   padding-inline-start: 10px;
 }
+
+.fa-list,
+.fa-mobile,
+.fa-store {
+  font-size: 1.20rem;
+  
+}
+/* span nouveauté */
 .miniSideA,
 .miniSideB {
   background-color: #99e2d0;
@@ -95,6 +136,7 @@ ol {
 span {
   font-size:16px;
 }
+/* Favoris */
 .favorite{position: absolute;right:3em;font-size:35px;}
 .favorite-full{position: absolute;right:3em;font-size:35px;opacity:0;}
 .favorite-full:hover{
@@ -104,7 +146,7 @@ span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;opacity: 1;transition:2s}
 
-
+/* fonctionnement*/
 .fonction_steps,li.local_,li.compo_,li.choice_ {
   position: relative;display: flex;
 }
@@ -126,41 +168,8 @@ span {
   font-weight: 700;
   box-shadow: 2px 2px 2px 2px #d3d3d3;
 }
-h1 {
-  font-family:"Shrikhand";
-  text-align: center;
- padding-top:10px;
-  padding-bottom:10px;
- margin:0px;
- box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    position: relative;
-    z-index: 1000;
-}
 
-
-.reserv_button {
-  border: #9356dc;
-  background-color: gray;
-  border-radius: 30px 30px 30px 30px;
-  background: linear-gradient(0deg,#9356dc,#ff79da);
-  cursor: pointer;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 12px;
-  padding-bottom:12px;
-  color: #fff;
-  font-size: 18px;
-  transition:2s;
-}
-.reserv_button:hover{transform: scale(1.1); 
-box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 80%); background: linear-gradient(0deg,#b896e2,#eb73c9);}
-
-.fa-list,
-.fa-mobile,
-.fa-store {
-  font-size: 1.20rem;
-  
-}
+/* autres elements */
 p {
   display: block;
   margin-top: 0;
@@ -175,29 +184,6 @@ p {
 .restau_menu {
   background-color: #f6f6f6;
    padding-bottom:60px;
-}
-footer {
-  background-color: #353535;
-  display: flex;
-  padding: 20px;
-}
-h3 {
-  font-family: "Shrikhand";
-  color: #fff;
-  margin: 0;
-  font-weight: lighter;
-}
-.lignesFooter {
-  color: #fff;
-  margin-top: 5%;
-}
-.footer_icon {
-  color: #fff;
-  margin-right: 10px;
-}
-.footer_icon2 {
-  color: #fff;
-  margin-right: 4px;
 }
 .bodybox {
   display: flex;
@@ -236,4 +222,28 @@ article {
 }
 :link {
   text-decoration: none;
+}
+/* pied de page */
+footer {
+  background-color: #353535;
+  display: flex;
+  padding: 20px;
+}
+h3 {
+  font-family: "Shrikhand";
+  color: #fff;
+  margin: 0;
+  font-weight: lighter;
+}
+.lignesFooter {
+  color: #fff;
+  margin-top: 5%;
+}
+.footer_icon {
+  color: #fff;
+  margin-right: 10px;
+}
+.footer_icon2 {
+  color: #fff;
+  margin-right: 4px;
 }

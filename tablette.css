@@ -5,6 +5,24 @@ body {
   font-family:"Roboto";
   margin: 0;
 }
+ /* Loader et animation loading */
+ .loaderbox {font-size:42px;font-family:"Shrikhand";display: flex;background-color: hsla(0,0%,100%,.9); 
+  justify-content: center;background: linear-gradient(0deg,#9356dc,#ff79da);color:#d3d3d3;
+  align-items: center;z-index:9999;
+  animation: loadtime linear 3s;visibility: hidden;
+      position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;}
+    
+    @keyframes loadtime {
+
+  0% {opacity:1;visibility:visible;}
+
+  100%{opacity:1;visibility: visible;}
+
+  }
 .local {
   background-color: #f3f3f3;
   text-align: center;
