@@ -23,6 +23,16 @@ body {
   100%{opacity:1;visibility: visible;}
 
   }
+  h4{color:white;animation: flash 1.2s linear infinite; }
+@keyframes flash {
+
+  0% {color:#fff900;
+  text-shadow: 0 0 7px fff900;}
+
+  90%{color: white;text-shadow:none;}
+  100%{color:#fff900;
+  text-shadow: 0 0 7px fff900;}
+  }
 .local {
   background-color: #f3f3f3;
   text-align: center;
@@ -147,7 +157,16 @@ p.reserv_text {
   margin-left:15%;
   margin-right:15%;
 }
-.favorite{position: absolute;right:3em;}
+/* Favoris */
+.favorite{position: absolute;right:3em;font-size:35px;}
+.favorite-full{position: absolute;right:3em;font-size:35px;opacity:0;}
+.favorite-full:hover{
+    background: -webkit-linear-gradient(
+0deg
+, #FF79DA 10%, #9356DC 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;opacity: 1;transition:2s}
+
 .fa-heart{font-size:32px;}
 .head_icon {
   margin-right: 10px;
