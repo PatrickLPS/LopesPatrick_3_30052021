@@ -150,6 +150,7 @@ h1 {
   padding-bottom:12px;
   color: #fff;
   font-size: 18px;
+  transition:2s;
 }
 .reserv_button:hover{transform: scale(1.1); box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 80%); background: linear-gradient(0deg,#b896e2,#eb73c9);}
 
@@ -169,7 +170,7 @@ p.reserv_text {
 , #FF79DA 10%, #9356DC 95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;opacity: 1;transition:2s}
-    
+
 .fa-heart{font-size:30px;}
 
 .head_icon {
