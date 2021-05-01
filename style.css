@@ -4,7 +4,13 @@
 body {
   font-family: "Roboto";
   margin: 0;}
+
+ input {height:36px;width:200px;border:none;background-color: #f3f3f3;color:black;font-weight: bold;font-size:18px;}
+ ::placeholder{color:black;font-weight: bold;font-size:18px;}
+ .linker:hover> .head_icon{color:#9356dc;}
+ .linker:hover{ color:#9356dc;}
  
+
  /* Loader et animation loading */
  .loaderbox {font-size:42px;font-family:"Shrikhand";display: flex;background-color: hsla(0,0%,100%,.9); 
   justify-content: center;background: linear-gradient(0deg,#9356dc,#ff79da);color:#d3d3d3;
@@ -28,11 +34,11 @@ h4{color:white;animation: flash 1.2s linear infinite; }
 @keyframes flash {
 
   0% {color:#fff900;
-  text-shadow: 0 0 7px fff900;}
+  text-shadow: 0 0 7px #fff900;}
 
   90%{color: white;text-shadow:none;}
   100%{color:#fff900;
-  text-shadow: 0 0 7px fff900;}
+  text-shadow: 0 0 7px #fff900;}
   }
   /* Header title */
 h1 {
@@ -54,10 +60,10 @@ h1 {
   font-size: 13px;
 }
 
-h2.local_h2_title{padding:6px;margin:0px;}
+.form_local_title{padding:6px;margin:0px;}
 .Localiter{margin:0px;}
 .local_icon {
-  margin: 10px;
+  margin: 10px;font-size:18px;
 }
 
 /* Reserver et bouton associé */
@@ -106,11 +112,11 @@ li {
 ol {
   display:block;
   list-style-type: decimal;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start:0%;
-  margin-inline-end:0%;
-  padding-inline-start: 10px;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left:0%;
+  margin-right:0%;
+  padding-left:10px;
 }
 
 .fa-list,
@@ -140,11 +146,11 @@ span {
 .favorite{position: absolute;right:3em;font-size:35px;}
 .favorite-full{position: absolute;right:3em;font-size:35px;opacity:0;}
 .favorite-full:hover{
-    background: -webkit-linear-gradient(
+    background: linear-gradient(
 0deg
 , #FF79DA 10%, #9356DC 95%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;opacity: 1;transition:2s}
+   color:#FF79DA;opacity: 1;transition:2s}
 
 /* fonctionnement*/
 .fonction_steps,li.local_,li.compo_,li.choice_ {
