@@ -20,15 +20,12 @@ img {
 
 }
  
-
 header{display:flex;justify-content:center;position:relative;}
 .header_box{display:flex;position:absolute;left:50px;bottom:25px;}
 .fa-arrow-left{font-weight: bold;font-size:26px;color:black;}
 .fa-arrow_left, a:link {
   text-decoration: none;
 }
-
-
 
 /* bouton */
 .button_command{display: inline-flex;justify-content:center;margin-bottom:60px;margin-top:50px;}
@@ -52,8 +49,6 @@ header{display:flex;justify-content:center;position:relative;}
 .tout_les_plats {
   background-color: #f6f6f6;
 }
-
-
 
 /* favoris */
 .favorite{position: absolute;right:0.50em;font-size:35px;top:30px;}
@@ -99,6 +94,27 @@ display: flex;height:100%;align-items:center;width:0px;justify-content:center;bo
 .LesPlats:hover .bg {width:60px;}
 .LesPlats:hover .fa-check{transition: 2s;display:flex;transform: rotate(1turn);visibility:visible;}
 
+
+.LesPlats .text{margin-left:10px;
+overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+width:80%;}
+h3,p{overflow:hidden;
+  text-overflow:ellipsis;}
+
+.LesPlats:hover h3{overflow:hidden;
+  text-overflow:ellipsis;
+white-space:nowrap;
+width:80%;
+}
+
+.LesPlats:hover p{overflow:hidden;
+  text-overflow:ellipsis;
+white-space:nowrap;
+width:80%;
+}
+
 .prix {
   font-weight: 700;
   margin-right: 20px;
@@ -127,13 +143,7 @@ align-items: flex-end;
 .text{margin-bottom:10px;}
 h3{margin: 0px;}
 p{margin:0px;}
-h3,P{overflow:hidden;
-  text-overflow:ellipsis;
-white-space:nowrap;
-margin-left:10px;
-width:240px;
 
-}
 img {
   height: 400px;
   width: 100%;
